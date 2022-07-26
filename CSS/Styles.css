@@ -1,0 +1,17 @@
+:root{
+ --cor-principal:  papayawhip;
+ --cor-do-link:  hsl(228, 45%, 44%);
+ --Quase-branco: hsl(0, 0%, 98%);
+ --Cinza-medio: hsl(0, 0%, 41%);
+ --Quase-preto:hsl(0, 0%, 8%);
+ --fonte-principal:'Epilogue', sans-serif;
+}
+
+body{
+    background-color: var(--Quase-branco);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+
+    
+    
+}

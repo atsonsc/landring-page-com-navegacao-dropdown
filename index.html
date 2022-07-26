@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="./CSS/normalize.css" rel="stylesheet">
+  <link href="./CSS/reset.css" rel="stylesheet">
+  <link href="./CSS/Styles.css" rel="stylesheet">
+  <link href="./CSS/header.css" rel="stylesheet">
+  <link href="./CSS/main.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="./images/logo.svg" alt="Logotipo da Snap" class="header__logo">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list--item"><a href="#">Features</a></li>
+          <ul class="navigation__list--dropdown">
+            <li><a href=""><a href="">Todo list</a></li>
+            <li><a href=""><a href="">Calendar</a></li>
+            <li><a href=""><a href="">Reminders</a></li>
+            <li><a href=""><a href="">Planning</a></li>
+
+          </ul>
+        <li class="navigation__list--item"><a href="#">company</a></li>
+          <ul class="navigation__list--dropdown">
+            <li><a href=""><a href="">History</a></li>
+            <li><a href=""><a href="">Our team</a></li>
+            <li><a href=""><a href="">Blog</a></li>
+
+
+          </ul>
+
+        <li class="navigation__list--item"><a href="#">Careers</a></li>
+        <li class="navigation__list--item"><a href="#">about</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="#" class="header__signUp">Login</a>
+      <button  class="header__btn">Register</button>
+
+    </div>
+  </header>
+  <main>
+    <section class="row">
+      <div class="col-1">
+        <h2 class="col-1__title"> Make <br>remote work</h2>
+        <p class="col-1__paragraph">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button class=" col-1__btn btn">Learn more</button>
+        <div>
+          <ul class="col-1__lista">
+            <li class="col-1__lista--item"><img src="./images/client-databiz.svg" alt="Logotipo da Databiz"></li>
+            <li class="col-1__lista--item"><img src="./images/client-audiophile.svg" alt="Logotipo da Autophile"></li>
+            <li class="col-1__lista--item"><img src="./images/client-meet.svg" alt="Logotipo da Meet"></li>
+            <li class="col-1__lista--item"><img src="./images/client-maker.svg" alt="Logotipo da marker"></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+
+      </div>
+
+
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

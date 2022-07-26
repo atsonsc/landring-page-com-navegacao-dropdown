@@ -1,0 +1,62 @@
+main{
+    padding: 2rem 5rem 4rem 5rem;
+}
+
+.row{
+    display: flex;
+    
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80vh;
+    padding:  0 5rem;
+    width: 50vw;
+
+    
+}
+
+.col-1__title{
+    color: var(--Quase-preto);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.col-1__paragraph{
+    color: var(--cinza-medio);
+    font-weight: 300;
+}
+.btn{
+    
+    color: var(--Quase-branco);
+    width: 200px;
+    background-color: var(--Quase-preto);
+    font-weight: 300;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+}
+
+.col-2{
+    background-image: url(/images/image-hero-desktop.png);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+    width: 50vw;
+   
+    
+}
+.col-1__lista{
+    align-items: center;
+    display: flex;
+    
+    list-style: none;
+    position: absolute;
+   
+}
+.col-1__lista--item{
+    margin: 0 1rem;
+}
