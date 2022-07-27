@@ -5,6 +5,25 @@
     padding: 0 2rem;
 }
 
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navigation{
+    margin-right: 35rem;
+}
+
 .navigation__list{
     align-items: center;
     color: var(--Quase-preto);
@@ -17,20 +36,34 @@
 .navigation__list--item{
     
     padding: 0 1rem;
+   
 }
+
+.navigation__list--arrowDown{
+    background-image: url(/images/icon-arrow-down.svg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-position-y: .4rem;
+}
+
+
+
 .navigation__list--item a {
     color: var(--Cinza-medio);
     font-size: 16px;
     text-decoration: none;
 }
 
-/*menu secundário*/
+
+
+/*menu ativo*/
 
 .navigation__list--dropdown{
    display: none;
-   background-color: var(--Quase-preto);
+   background-color: #ffffff;
    list-style: none;
-   padding: 1rem;
+   padding: 2rem;
+   position: absolute;
    
 }
 
@@ -39,10 +72,30 @@
     margin: 1rem 0;
 }
 
+
+
 .navigation__list--dropdown  li a {
-    color: #ffffff;
+    color: var(--Cinza-medio);
     text-decoration: none;
     font-weight: 300;
+}
+
+.navigation__list--features:nth-child(1){
+    background-image: url(/images/icon-calendar.svg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-position-y: 5rem;
+    background-position-x: .5rem;
+    
+    
+}
+.navigation__list--features:nth-child(2){
+    background-image: url(/images/icon-calendar.svg);
+    background-position: initial;
+    background-repeat: no-repeat;
+   
+    
+    
 }
 
 /*botões do canto superior esquerdo*/

@@ -16,33 +16,44 @@
   <link href="./CSS/header.css" rel="stylesheet">
   <link href="./CSS/main.css" rel="stylesheet">
 
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+ 
+
+  <title>section with dropdown navigation</title>
 
 </head>
 
 <body>
 
   <header class="header">
-    <img src="./images/logo.svg" alt="Logotipo da Snap" class="header__logo">
+    <a href="#"><img src="./images/logo.svg" alt="Logotipo da Snap" class="header__logo"></a>
     <nav class="navigation">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul class="navigation__list">
-        <li class="navigation__list--item"><a href="#">Features</a></li>
-          <ul class="navigation__list--dropdown">
-            <li><a href=""><a href="">Todo list</a></li>
-            <li><a href=""><a href="">Calendar</a></li>
-            <li><a href=""><a href="">Reminders</a></li>
-            <li><a href=""><a href="">Planning</a></li>
+       <li class="navigation__list--item navigation__list--arrowDown"><a href="#">Features</a>
+          <div>
+            <ul class="navigation__list--dropdown navigation__list--features">
+              <li><a href=""><a href="#">Todo list</a></li>
+              <li><a href=""><a href="#">Calendar</a></li>
+              <li><a href=""><a href="#">Reminders</a></li>
+              <li><a href=""><a href="#">Planning</a></li>
 
-          </ul>
-        <li class="navigation__list--item"><a href="#">company</a></li>
-          <ul class="navigation__list--dropdown">
-            <li><a href=""><a href="">History</a></li>
-            <li><a href=""><a href="">Our team</a></li>
-            <li><a href=""><a href="">Blog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navigation__list--item navigation__list--arrowDown"><a href="#">company</a>
+          <div>
+            <ul class="navigation__list--dropdown">
+              <li><a href=""><a href="">History</a></li>
+              <li><a href=""><a href="">Our team</a></li>
+              <li><a href=""><a href="">Blog</a></li>
 
 
-          </ul>
-
+            </ul>
+          </div>
+        </li>
         <li class="navigation__list--item"><a href="#">Careers</a></li>
         <li class="navigation__list--item"><a href="#">about</a></li>
       </ul>
@@ -60,7 +71,7 @@
         <p class="col-1__paragraph">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
         <button class=" col-1__btn btn">Learn more</button>
-        <div>
+        <div class="col-1__container">
           <ul class="col-1__lista">
             <li class="col-1__lista--item"><img src="./images/client-databiz.svg" alt="Logotipo da Databiz"></li>
             <li class="col-1__lista--item"><img src="./images/client-audiophile.svg" alt="Logotipo da Autophile"></li>

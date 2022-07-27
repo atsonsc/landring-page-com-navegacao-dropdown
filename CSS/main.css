@@ -38,9 +38,20 @@ main{
     border-radius: 10px;
 }
 
+
+.col-1__lista{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    position: absolute;
+   
+}
+.col-1__lista--item{
+    margin: 0 1rem;
+}
+
 .col-2{
     background-image: url(/images/image-hero-desktop.png);
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -49,14 +60,71 @@ main{
    
     
 }
-.col-1__lista{
-    align-items: center;
-    display: flex;
+
+@media screen and (max-width: 600px){
+
+    main{
+        padding: 0;
+    }
+
+    /*lembrar de retirar o display none do header*/
+    .header{
+        display: none;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+       
+    }
+
+    .col-1{
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+
+    .col-1__title{
+        font-size: 2.2rem;
+        padding: 0 1rem;
+       
+    }
+
+    br{
+        display: none;
+    }
+
+    .col-1__paragraph{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 .8rem;
+
+    }
+
+    .col-1__container{
+        width: 100vw;
+       
+    }
+
+    .col-1__lista{
+        justify-content: center;
+        position: relative;
+
+    }
+  
+    .col-1__lista--item img {
+        width: 70px;
+       
+    }
+    .col-2{
+        background-image: url(/images/image-hero-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 50vh;
+    }
     
-    list-style: none;
-    position: absolute;
-   
-}
-.col-1__lista--item{
-    margin: 0 1rem;
+    
 }
