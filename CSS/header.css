@@ -6,25 +6,17 @@
 }
 
 
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
 
-#check{
-    display: none;
-}
 
-.navigation{
+.nav{
     margin-right: 35rem;
 }
 
-.navigation__list{
+#btn-mobile{
+  display: none;  
+}
+
+.menu{
     align-items: center;
     color: var(--Quase-preto);
     display: flex;
@@ -33,13 +25,13 @@
         
 }
 
-.navigation__list--item{
+.menu li{
     
     padding: 0 1rem;
    
 }
 
-.navigation__list--arrowDown{
+.arrowDown{
     background-image: url(/images/icon-arrow-down.svg);
     background-position: initial;
     background-repeat: no-repeat;
@@ -48,7 +40,7 @@
 
 
 
-.navigation__list--item a {
+.menu a {
     color: var(--Cinza-medio);
     font-size: 16px;
     text-decoration: none;
@@ -123,3 +115,116 @@
     transition: .5s;
 
 }
+
+@media screen and (max-width: 600px) {
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 100px;
+        padding: 1rem 0;
+    }
+  
+
+    .menu{
+        display: block;
+        position: absolute;
+        width: 60%;
+        top:50px;
+        right: 0px;
+        background: var(--Quase-branco);
+        transition: .6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav.active #menu{
+        display: block;
+        height: calc(100vh - 37px);
+        visibility: visible;
+        overflow-y: auto;
+       
+    }
+
+    .nav .menu li{
+        color: var(--Quase-branco);
+        padding: 1rem 0;
+       
+       
+
+    }
+
+    .arrowDown{
+        background-image: url(/images/icon-arrow-down.svg);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-position-y: 1.4rem;
+       margin-right: 1.5rem;
+    }
+    
+
+    .menu a {
+        color: var(--Cinza-medio);
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        
+    }
+    
+    .container__login{
+      display: none;
+    }
+     
+    #btn-mobile{
+        border: none;
+        background: none;
+        cursor: pointer;
+        display: flex;
+        font-size: 1rem;
+        padding: 1rem;
+       position: absolute;
+       right: 1rem;
+       top: .5rem;
+       gap: 5px;
+       transition: .3s;
+
+    }
+    .hamburguer{
+        border-top: 2px solid var(--Quase-preto);
+        width: 20px;
+    }
+
+    .hamburguer::after, .hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        border-bottom: 2px solid var(--Quase-preto);
+    }
+
+    .nav.active .hamburguer{
+        border-top: none;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+       
+        
+    }
+
+
+    .nav.active .hamburguer::after{
+
+        transform: rotate(-135deg);
+        
+    }
+
+  
+}
+    
+    

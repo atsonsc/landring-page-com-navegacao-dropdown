@@ -15,6 +15,7 @@
   <link href="./CSS/Styles.css" rel="stylesheet">
   <link href="./CSS/header.css" rel="stylesheet">
   <link href="./CSS/main.css" rel="stylesheet">
+ 
 
  
 
@@ -25,14 +26,15 @@
 <body>
 
   <header class="header">
-    <a href="#"><img src="./images/logo.svg" alt="Logotipo da Snap" class="header__logo"></a>
-    <nav class="navigation">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul class="navigation__list">
-       <li class="navigation__list--item navigation__list--arrowDown"><a href="#">Features</a>
+    <a href="#"><img src="./images/logo.svg" alt="Logotipo da Snap" class="logo"></a>
+  
+    <nav class="nav" id="nav">
+      <button id="btn-mobile">
+        <span class="hamburguer"></span>
+      </button>
+    
+      <ul class="menu" id="menu">
+       <li class="arrowDown"><a href="#">Features</a>
           <div>
             <ul class="navigation__list--dropdown navigation__list--features">
               <li><a href=""><a href="#">Todo list</a></li>
@@ -43,7 +45,7 @@
             </ul>
           </div>
         </li>
-        <li class="navigation__list--item navigation__list--arrowDown"><a href="#">company</a>
+        <li class="arrowDown"><a href="#">company</a>
           <div>
             <ul class="navigation__list--dropdown">
               <li><a href=""><a href="">History</a></li>
@@ -54,11 +56,11 @@
             </ul>
           </div>
         </li>
-        <li class="navigation__list--item"><a href="#">Careers</a></li>
-        <li class="navigation__list--item"><a href="#">about</a></li>
+        <li ><a href="#">Careers</a></li>
+        <li ><a href="#">about</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="container__login">
       <a href="#" class="header__signUp">Login</a>
       <button  class="header__btn">Register</button>
 
@@ -88,15 +90,7 @@
 
     </section>
   </main>
-
-
-
-
-
-
-
-
-
+  <script src="./main.js"></script>
 
 </body>
 

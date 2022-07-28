@@ -67,11 +67,7 @@ main{
         padding: 0;
     }
 
-    /*lembrar de retirar o display none do header*/
-    .header{
-        display: none;
-    }
-
+  
     .row{
         flex-direction: column-reverse;
        
